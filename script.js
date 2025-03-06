@@ -8,12 +8,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Validación de usuario y contraseña
     if (username === 'admin' && password === 'admin123') {
         errorMessage.textContent = '';
-        alert('Bienvenido, administrador.');
-        // Redirigir o realizar otras acciones para el admin
+        window.location.href = 'admin.html'; // Redirige al panel de administrador
     } else if (username === 'usuario' && password === 'usuario123') {
         errorMessage.textContent = '';
-        alert('Bienvenido, usuario.');
-        // Redirigir o realizar otras acciones para el usuario
+        window.location.href = 'usuario.html'; // Redirige al panel de usuario
     } else {
         errorMessage.textContent = 'Usuario o contraseña incorrectos.';
     }
