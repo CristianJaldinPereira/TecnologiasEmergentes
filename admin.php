@@ -2,7 +2,7 @@
 require 'includes/auth.php';
 
 if (!isLoggedIn() || !isAdmin()) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 ?>
